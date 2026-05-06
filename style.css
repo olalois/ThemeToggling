@@ -118,6 +118,8 @@ button {
   cursor: pointer;
   border-radius: 10px;
   margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   border: 2px solid var(--primary-color);
   font-size: 15px;
   outline: none;
@@ -258,4 +260,148 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+  img {
+    height: 500px;
+    width: 500px;
+  }
+  .fab {
+    font-size: 70px;
+  }
+  .text-box {
+    width: 80%;
+  }
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .text-box {
+    width: 90%;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  img {
+    height: 300px;
+    width: 300px;
+  }
+  .fab {
+    font-size: 30px;
+    margin-right: 25px;
+  }
+  .theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    left: 15px;
+    top: 50px;
+  }
+  button {
+    min-width: 50px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-right: 0;
+    border: 2px solid var(--primary-color);
+    font-size: 10px;
+    outline: none;
+  }
+  .text-box {
+    width: 90%;
+    text-align: justify;
+    background: rgb(0 0 0 / 50%);
+    color: var(--on-primary);
+    border-radius: 10px;
+    padding: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .text-box {
+    width: 90%;
+    text-align: justify;
+    background: rgb(0 0 0 / 50%);
+    color: var(--on-primary);
+    border-radius: 10px;
+    padding: 15px;
+  }
+  a {
+    margin-right: 10px;
+  }
+  .fas {
+    font-size: 25px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 350px) {
+  .text-box {
+    width: 80%;
+    text-align: justify;
+    background: rgb(0 0 0 / 50%);
+    color: var(--on-primary);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  a {
+    margin-right: 5px;
+  }
+  img {
+    height: 200px;
+    width: 200px;
+  }
+  .image-container {
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-right: 0px;
+    width: auto;
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+  }
+  h1 {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: normal;
+    color: var(--on-background-alt);
+  }
+  button {
+    min-width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 2.5px;
+    border: 2px solid var(--primary-color);
+    font-size: 15px;
+    outline: none;
+  }
+  .fab {
+    font-size: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+  nav {
+    font-size: 10px;
+    padding: 10px;
+  }
 }
